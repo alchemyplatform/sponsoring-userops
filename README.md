@@ -1,4 +1,4 @@
-# Creating a Smart Contract Account and sending ETH
+# Sponsoring user operations using AA-SDK and Gas Manager
 
 This repository serves as the codebase for Alchemy's tutorial on sponsoring userops [tutorial](https://docs.alchemy.com/docs/how-to-sponsor-userops-using-aa-sdk-and-gas-manager). This tutorial walks you through the process of using Alchemy AA-SDK and Gas Manager to execute sponsored userops (such as sending ETH).
 
