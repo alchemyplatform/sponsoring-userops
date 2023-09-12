@@ -32,27 +32,6 @@ export async function main() {
   );
 
   console.log("\nTransaction hash: ", txHash);
-
-  const userOpReceipt = await signer.getUserOperationReceipt(
-    result.hash as `0x${string}`
-  );
-
-  console.log("\nUser operation receipt: ", userOpReceipt);
-
-  const txReceipt = await signer.rpcClient.waitForTransactionReceipt({
-    hash: txHash,
-  });
-
-  return txReceipt;
 }
 
-main()
-  .then((txReceipt) => {
-    console.log("\nTransaction receipt: ", txReceipt);
-  })
-  .catch((err) => {
-    console.error("Error: ", err);
-  })
-  .finally(() => {
-    console.log("\n--- DONE ---");
-  });
+main();
